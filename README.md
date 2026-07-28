@@ -24,8 +24,10 @@ Ref 1: to Start this project off the first thing we need to do is to get our Ubu
 
 ![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-28%2019-22-58.png?raw=true)
 
-Ref 2: Once the vm is up and running our ubuntu server we will created a new user as it is best practice to run Cowrie under a non-root user this can be done with the following command
+Ref 2: Once the vm is up and running our ubuntu server we will created a new user as it is best practice to run Cowrie under a non-root.
 
-  $ sudo adduser --disabled-password cowrie
+you can do that will the following command:
+
+    $ sudo adduser --disabled-password cowrie
 
 
