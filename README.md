@@ -26,6 +26,6 @@ Ref 1: to Start this project off the first thing we need to do is to get our Ubu
 
 Ref 2: Once the vm is up and running our ubuntu server we will created a new user as it is best practice to run Cowrie under a non-root user this can be done with the following command
 
-$ sudo adduser --disabled-password cowrie
+  $ sudo adduser --disabled-password cowrie
 
 
