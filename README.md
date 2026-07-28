@@ -1,36 +1,23 @@
-# Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation
-in this protect we will spin a Ubuntu server VM and build a Cowrie a SSH honeypot on the server a then we will connected the server to our prexisting Wazuh manager and capture brute force attacks in the threat hunting in real time
+# Building a Cowrie SSH Honeypot with Wazuh inegration
 
-PROJECTNAME
-Objective
-
+## Objective
 [Brief Objective - Remove this afterwards]
 
-The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
-Skills Learned
+Our objective in this lab will be to setup a Ubuntu server VM and install a Cowrie SSH Honeypot then connect the VM to our preexisting Wazuh manager and using the threat hunting tab capture real brute force attacks the server (Note: while this lab is not intended to be used a walk though if you do use it that way please make sure this honeypot is deploy in a isolated environment and never run it on a production system.) 
 
-[Bullet Points - Remove this afterwards]
+### Skills Learned
 
-    Advanced understanding of SIEM concepts and practical application.
-    Proficiency in analyzing and interpreting network logs.
-    Ability to generate and recognize attack signatures and patterns.
-    Enhanced knowledge of network protocols and security vulnerabilities.
-    Development of critical thinking and problem-solving skills in cybersecurity.
+- Advanced understanding of SIEM concepts and practical application.
+- Proficiency in analyzing and interpreting network logs.
+- Ability to generate and recognize attack signatures and patterns.
+- Enhanced knowledge of network protocols and security vulnerabilities.
+- Development of critical thinking and problem-solving skills in cybersecurity.
 
-Tools Used
+### Tools Used
 
-[Bullet Points - Remove this afterwards]
+- Security Information and Event Management (SIEM) system for log ingestion and analysis.
+- Ubuntu Server VM running ubuntu 26.04 LTS 
 
-    Security Information and Event Management (SIEM) system for log ingestion and analysis.
-    Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-    Telemetry generation tools to create realistic network traffic and attack scenarios.
+## Steps
 
-Steps
-
-drag & drop screenshots here or use imgur and reference them using imgsrc
-
-Every screenshot should have some text explaining what the screenshot is about.
-
-Example below.
-
-Ref 1: Network Diagram
+Ref 1: 
