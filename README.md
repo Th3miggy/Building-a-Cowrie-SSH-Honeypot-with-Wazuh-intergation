@@ -30,4 +30,20 @@ you can do that will the following command:
 
     $ sudo adduser --disabled-password cowrie
 
+![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-27%2017-30-48.png?raw=true)
+
+Ref 3: Now that the new user is created we go install our dependencies and clone Cowrie
+
+        $ sudo apt update
+        $ sudo apt install git python3-virtualenv libssl-dev libffi-dev build-essential libpython3-dev python3-minimal authbind -y
+
+Now switch to to the cowrie user and clone the repository
+
+        $ sudo su - cowrie
+        $ git clone https://github.com/cowrie/cowrie.git ~/cowrie
+
+![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-27%2018-05-01.png?raw=true)
+
+
+
 
