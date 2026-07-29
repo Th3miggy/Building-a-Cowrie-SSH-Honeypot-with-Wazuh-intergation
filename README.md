@@ -78,7 +78,7 @@ test the port
 
 ![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-27%2020-41-36.png?raw=true)
 
-Ref 7: Now that the Cowrie is up and running its time to get our Wazuh agent installed and register to our manager (note: reminder that lab already had a Wazuh manager setup on a spread machine which is required for the monitoring)
+Ref 7: Now that the Cowrie is up and running its time to get our Wazuh agent installed and register to our manager (note: reminder that lab already had a Wazuh manager setup on a spread machine which is required for the monitoring. Make sure you switch to Root starting now.
 
         $ curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | sudo gpg --dearmor -o /usr/share/keyrings/wazuh.gpg
         $ echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" | sudo tee /etc/apt/sources.list.d/wazuh.list
@@ -101,7 +101,23 @@ and add this localfile block
           $ <log_format>json</log_format>
         $ </localfile>
 
-![not-working](
+![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-28%2021-45-09.png?raw=true)
+
+Ref 9: Alright lets restart our wazuh-agent and check it in wazuh manager
+
+        $ sudo systemctl restart wazuh-agent
+
+![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-27%2022-58-56.png?raw=true)
+
+As you can see we now have a active agent "honeypot-cowrie" ID 200 on Ubuntu 26.04 LTS
+
+I let the honeypot sit open for about 12 hours and we had right at 400 hits/alerts go off several of them being fail logon attempts
+
+![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-28%2018-53-07.png?raw=true)
+
+
+
+
 
 
 
