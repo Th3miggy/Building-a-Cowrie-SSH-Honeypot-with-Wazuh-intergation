@@ -76,6 +76,29 @@ test the port
 
         $ nc -zv YOUR_SERVER_IP 2222
 
+![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-27%2020-41-36.png?raw=true)
+
+Ref 7: Now that the Cowrie is up and running its time to get our Wazuh agent installed and register to our manager (note: reminder that lab already had a Wazuh manager setup on a spread machine which is required for the monitoring)
+
+        $ curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | sudo gpg --dearmor -o /usr/share/keyrings/wazuh.gpg
+        $ echo "deb [signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" | sudo tee /etc/apt/sources.list.d/wazuh.list
+
+        $ sudo apt update
+        $ sudo apt install wazuh-agent -y
+
+![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-27%2022-14-23.png?raw=true)
+
+Ref 8: Before we check the Wazuh manager we need to edit the ossec.conf file to monitor cowrie logs
+
+        $ edit /var/ossec/etc/ossec.conf
+
+and add this localfile block
+
+        $ <localfile>
+          $ <location>/home/cowrie/cowrie/var/log/cowrie/cowrie.json</location>
+          $ <log_format>json</log_format>
+        $ </localfile>
+        
 
 
 
