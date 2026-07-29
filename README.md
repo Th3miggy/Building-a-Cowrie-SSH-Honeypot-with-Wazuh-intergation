@@ -98,7 +98,8 @@ and add this localfile block
           $ <location>/home/cowrie/cowrie/var/log/cowrie/cowrie.json</location>
           $ <log_format>json</log_format>
         $ </localfile>
-        
+
+![not-working](
 
 
 
