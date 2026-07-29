@@ -115,6 +115,15 @@ I let the honeypot sit open for about 12 hours and we had right at 400 hits/aler
 
 ![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-28%2018-53-07.png?raw=true)
 
+![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-28%2018-48-41.png?raw=true)
+
+
+##Conclusion
+
+Integrating Cowrie with Wazuh bridges the gap between deception technology and enterprise-grade monitoring. 
+
+
+
 
 
 
