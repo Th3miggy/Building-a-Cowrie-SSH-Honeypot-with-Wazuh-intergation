@@ -88,6 +88,8 @@ Ref 7: Now that the Cowrie is up and running its time to get our Wazuh agent ins
 
 ![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-27%2022-14-23.png?raw=true)
 
+![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-27%2022-15-05.png?raw=true)
+
 Ref 8: Before we check the Wazuh manager we need to edit the ossec.conf file to monitor cowrie logs
 
         $ edit /var/ossec/etc/ossec.conf
