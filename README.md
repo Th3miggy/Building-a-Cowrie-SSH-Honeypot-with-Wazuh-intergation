@@ -44,6 +44,25 @@ Now switch to to the cowrie user and clone the repository
 
 ![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-27%2018-05-01.png?raw=true)
 
+Ref 4: Once that is complete we can start to setup Cowrie virtual environment and install the requirements
+
+        $ cd ~/cowrie
+        $ virtualenv --python=python3 cowrie-env
+        $ source cowrie-env/bin/activate
+        $ pip install --upgrade pip
+        $ pip -r requirements.txt
+
+![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-28%2019-56-46.png?raw=true)
+
+Ref 5: Now we will Configure Cowrie. Following key changes that were made Hostname = fake-server listen_endpoints = tcp:6:2222:interface=:: SFTP_enables = true JSON logging enabled at: /home/cowrie/cowrie/var/log/cowrie/cowrie.json
+
+        $ cp etc/cowrie.cfg.dist etc/cowrie.cfg
+        $ nano etc/cowrie.cfg
+
+![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-27%2019-39-00.png?raw=true)
+
+![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-27%2019-42-01.png?raw=true)
+
 
 
 
