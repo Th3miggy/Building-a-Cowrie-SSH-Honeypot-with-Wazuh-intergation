@@ -63,6 +63,19 @@ Ref 5: Now we will Configure Cowrie. Following key changes that were made Hostna
 
 ![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-27%2019-42-01.png?raw=true)
 
+Ref 6: For the next step we will start Cowrie and verify its running and we can as confirm its broadcasting on the correct port
+
+        $ bin/cowrie start
+        $ bin/cowrie status
+
+Notes: worth saying documentation states that the cowrie command should be located in the bin folder however, Mine was not there but after some searching it was found and since it can't but run is a where the .cfg files isnt so I did have to go though the trouble of moving it to the correct location in the /bin directory 
+
+![not-working](https://github.com/Th3miggy/Building-a-Cowrie-SSH-Honeypot-with-Wazuh-intergation/blob/main/Screenshot%20from%202026-07-27%2020-38-50.png?raw=true)
+
+test the port
+
+        $ nc -zv YOUR_SERVER_IP 2222
+
 
 
 
